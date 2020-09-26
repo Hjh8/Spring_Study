@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 构造注入
+        <constructor-arg name="name" value="codekiang"/>
+    -->
+    <bean id="myStudent" class="org.example.ba03.Student">
+        <constructor-arg name="name" value="codekiang"/>
+        <constructor-arg name="age" value="20"/>
+        <constructor-arg name="school" ref="school"/>
+    </bean>
+
+    <bean id="school" class="org.example.ba03.School">
+        <property name="name" value="清华" />
+        <property name="address" value="北京" />
+    </bean>
+</beans>

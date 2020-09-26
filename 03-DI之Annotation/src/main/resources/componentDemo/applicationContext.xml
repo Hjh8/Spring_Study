@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  声明组件扫描器
+            base-package：指定注解在你项目中的包名
+            工作方式：spring会扫描遍历base-package指定的包中所有的类，找到类中的注解，
+                     按照注解的功能创建对象/给属性赋值
+    -->
+<!--    <context:component-scan base-package="componentDemo" />-->
+
+    <!--  扫描多个包的方式一：分隔符（;或,）  -->
+<!--    <context:component-scan base-package="componentDemo1;componentDemo2" />-->
+    <!--  扫描多个包的方式二：指定父包-->
+<!--    <context:component-scan base-package="多个包的父包" />-->
+
+
+    <context:component-scan base-package="ba04" />
+</beans>

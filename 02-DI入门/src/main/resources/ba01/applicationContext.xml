@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- set注入：只是调用类的set方法
+            简单类型的set注入：
+            <bean id="" class="">
+                一个property只能给一个属性赋值
+                <property name="属性名" value="属性值">
+            </bean>
+     -->
+    <bean id="myStudent" class="org.example.ba01.Student">
+        <property name="name" value="codeKiang" />
+        <property name="age" value="18" />
+    </bean>
+
+    <!--  非自定义类的属性赋值  -->
+    <bean id="myDate" class="java.util.Date">
+        <property name="time" value="2020081899" />
+    </bean>
+
+</beans>
