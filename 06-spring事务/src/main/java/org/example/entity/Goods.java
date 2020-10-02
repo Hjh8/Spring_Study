@@ -1,0 +1,45 @@
+package org.example.entity;
+
+public class Goods {
+    private int id;
+    private String name;
+    private int amount;
+    private float price;
+
+    public Goods(){}
+
+    public Goods(int id, int amount) {
+        this.id = id;
+        this.amount = amount;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", amount=" + amount +
+                ", price=" + price +
+                '}';
+    }
+}

@@ -1,0 +1,10 @@
+1. 创建项目，加入maven依赖
+   spring依赖、mybatis依赖、mysql驱动依赖、spring事务的依赖。
+   mybatis与spring继承的依赖：用来在项目中创建mybatis的SqlSessionFactory、dao对象的。
+2. 创建实体类
+3. 创建dao接口和mapper文件
+4. 创建mybatis主配置文件
+5. 创建service接口和实现类，属性是dao
+6. 创建spring主配置文件：声明mybatis的对象交给spring创建
+   数据源、SqlSessionFactory、dao对象、声明自定义的Service
+7. 创建测试类，通过Service对象调用dao完成数据访问
